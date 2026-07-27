@@ -103,6 +103,15 @@ b, strong { color:#fff; font-weight:700; }
 .numc .l { font-size:12.5px; font-weight:700; margin-top:8px; }
 .numc .d { font-size:11.5px; color:var(--muted); margin-top:5px; line-height:1.5; }
 
+/* ===== vídeos ===== */
+.vidlb { font-size:9.5px; letter-spacing:.24em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-top:30px; }
+.vids { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:30px; }
+.vid { position:relative; padding-top:56.25%; border-radius:14px; overflow:hidden; border:1px solid var(--hair); background:var(--surface); }
+.vid iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.stars { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-top:26px; }
+.stars .s { color:var(--gold); font-size:22px; letter-spacing:3px; }
+.stars .t { font-size:13.5px; color:#C4CAD1; }
+
 /* ===== assinatura ===== */
 .sign { display:flex; flex-wrap:wrap; gap:26px; align-items:center; justify-content:space-between;
   margin-top:38px; border-top:1px solid var(--hair); padding-top:30px; }
@@ -180,6 +189,7 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
   section { padding:56px 0; }
   .g3, .g2, .ben { grid-template-columns:1fr; }
   .nums { grid-template-columns:repeat(2,1fr); }
+  .vids { grid-template-columns:1fr; }
   .ben { gap:0; }
   .hero-top img { width:112px; }
   .slot { flex-direction:column; gap:6px; }
@@ -210,10 +220,10 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
   <div class="hero-in">
     <div class="eyebrow">Lagoinha Itaquacetuba &nbsp;·&nbsp; Sábado, 12 de dezembro de 2026</div>
     <h1>ABALA<br>ITAQUÁ</h1>
-    <p>Você ministra uma música. Sai da conferência com <b>vídeo em 4K</b>, <b>áudio mixado e masterizado</b>
-    e <b>fotos profissionais</b> — pronto para publicar.</p>
+    <p>Você sobe com a <b>sua própria banda</b>, ministra uma música e sai da conferência com
+    <b>vídeo em 4K</b>, <b>áudio mixado e masterizado</b> e <b>fotos profissionais</b> — pronto para publicar.</p>
     <div class="stats">
-      <div class="stat"><div class="k">Sua janela</div><div class="v">1 música ou medley</div></div>
+      <div class="stat"><div class="k">Sua janela</div><div class="v">1 música, com a sua banda</div></div>
       <div class="stat"><div class="k">Entrega</div><div class="v">Até 30 dias</div></div>
       <div class="stat"><div class="k">Onde</div><div class="v">Lagoinha Itaquacetuba</div></div>
     </div>
@@ -228,7 +238,7 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
 <section style="padding-bottom:0;">
   <div class="wrap">
     <div class="nums">
-      <div class="numc hi rv"><div class="v" data-count="0" id="dias">—</div><div class="l">Dias para a conferência</div><div class="d">Sábado, 12 de dezembro de 2026</div></div>
+      <div class="numc hi rv"><div class="v" data-count="0" id="dias">—</div><div class="l">Dias para fechar sua vaga</div><div class="d">Inscrições até 13/10/2026, ou antes se as vagas acabarem</div></div>
       <div class="numc rv"><div class="v" data-count="1">0</div><div class="l">Música ou medley</div><div class="d">Sua janela de até 10 minutos no palco</div></div>
       <div class="numc rv"><div class="v" data-count="20" data-prefix="10–">0</div><div class="l">Fotos profissionais</div><div class="d">Selecionadas e tratadas pela equipe</div></div>
       <div class="numc rv"><div class="v" data-count="10" data-prefix="5–">0</div><div class="l">Vagas na noite</div><div class="d">Reserva por ordem de confirmação</div></div>
@@ -313,13 +323,15 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
       <div class="rule"></div>
     </div>
     <div class="steps">
-      <div class="step rv"><div class="n">ETAPA 01</div><h3>Você garante a vaga</h3>
-        <p>Chama no WhatsApp, confirma a participação e assina o termo. A vaga fica reservada no seu nome.</p></div>
-      <div class="step rv"><div class="n">ETAPA 02</div><h3>Preparação técnica</h3>
-        <p>No dia, você chega às 17h para passagem de som, posicionamento de câmeras e alinhamento com a equipe.</p></div>
-      <div class="step rv"><div class="n">ETAPA 03</div><h3>Sua ministração</h3>
+      <div class="step rv"><div class="n">ETAPA 01</div><h3>Você chama no WhatsApp</h3>
+        <p>A gente conversa, passa os valores e as formas de pagamento e confirma se ainda há vaga aberta.</p></div>
+      <div class="step rv"><div class="n">ETAPA 02</div><h3>Termo e pagamento</h3>
+        <p>Você recebe o termo de contratação, preenche seus dados e assina. O pagamento é integral no ato da assinatura — é ele que reserva a vaga no seu nome.</p></div>
+      <div class="step rv"><div class="n">ETAPA 03</div><h3>Preparação técnica</h3>
+        <p>No dia, você e sua banda chegam às 17h para passagem de som, posicionamento de câmeras e alinhamento com a equipe.</p></div>
+      <div class="step rv"><div class="n">ETAPA 04</div><h3>Sua ministração</h3>
         <p>Você sobe ao palco e ministra sua música. A equipe do abba estúdio capta tudo em áudio, vídeo e foto.</p></div>
-      <div class="step rv"><div class="n">ETAPA 04</div><h3>Pós-produção e entrega</h3>
+      <div class="step rv"><div class="n">ETAPA 05</div><h3>Pós-produção e entrega</h3>
         <p>Mix, master, edição, tratamento de cor e seleção das fotos. Em até 30 dias o link chega para você baixar.</p></div>
     </div>
   </div>
@@ -357,10 +369,22 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
       <p class="lead">Clipes, captações ao vivo e o material que já entregamos para outros artistas estão
       todos no nosso Instagram. Dá uma olhada antes de decidir — é o melhor jeito de saber se o padrão
       é o que você procura.</p>
-      <a class="btn ghost" href="https://www.instagram.com/abbae.studio/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
-        @abbae.studio
-      </a>
+      <div class="vidlb rv" id="vidlb">Um trabalho recente do estúdio</div>
+      <div class="vids" id="vids" style="margin-top:12px;"></div>
+      <div class="stars">
+        <div class="s">★★★★★</div>
+        <div class="t">Veja o que os clientes do abba estúdio dizem no Google</div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:12px;">
+        <a class="btn ghost" href="https://www.instagram.com/abbae.studio/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+          @abbae.studio
+        </a>
+        <a class="btn ghost" href="https://share.google/eGTvyO216Yi6te2M4" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="m12 3 2.6 5.7 6.4.7-4.7 4.3 1.3 6.3L12 17l-5.6 3 1.3-6.3L3 9.4l6.4-.7z"/></svg>
+          Avaliações no Google
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -376,6 +400,8 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
     <div class="faq">
       <div class="q"><button type="button">Quantas músicas eu canto?</button>
         <div class="a"><p>Uma música, que pode ser um medley. A janela é de até 10 minutos no palco.</p></div></div>
+      <div class="q"><button type="button">Canto com playback ou com banda?</button>
+        <div class="a"><p>Com a sua própria banda. Você traz seus músicos, e todos entram na captação de áudio e vídeo. Na hora de fechar a vaga, informe quantas pessoas sobem ao palco com você, para a gente organizar a passagem de som e o posicionamento das câmeras.</p></div></div>
       <div class="q"><button type="button">Eu recebo os arquivos brutos?</button>
         <div class="a"><p>Não. Você recebe o material já finalizado: o vídeo em 4K com o áudio mixado e masterizado integrado, e as fotos selecionadas e tratadas. Gravações originais de câmera, faixas multipista e projetos de edição ficam com o estúdio.</p></div></div>
       <div class="q"><button type="button">Posso postar onde eu quiser?</button>
@@ -387,7 +413,9 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
       <div class="q"><button type="button">Quando recebo o material?</button>
         <div class="a"><p>Em até 30 dias corridos após a captação, por link do Google Drive. Os arquivos ficam disponíveis por 60 dias para você baixar e guardar.</p></div></div>
       <div class="q"><button type="button">Como funciona o pagamento?</button>
-        <div class="a"><p>O valor é pago integralmente na assinatura do termo, e é isso que reserva a sua vaga. Chama no WhatsApp que a gente passa os valores e as formas de pagamento.</p></div></div>
+        <div class="a"><p>Os valores e as formas de pagamento são passados no WhatsApp e ficam formalizados no termo de contratação. O pagamento é integral no ato da assinatura, e é ele que reserva a sua vaga.</p></div></div>
+      <div class="q"><button type="button">Até quando dá para me inscrever?</button>
+        <div class="a"><p>As inscrições fecham em 13/10/2026, 60 dias antes da conferência — ou antes disso, se as vagas se esgotarem. São de 5 a 10 vagas no total, por ordem de confirmação de pagamento.</p></div></div>
     </div>
   </div>
 </section>
@@ -458,10 +486,34 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
   window.addEventListener('resize', paint);
 })();
 
+/* =====================================================================
+   VÍDEOS DO YOUTUBE
+   Cole aqui os IDs dos vídeos, entre aspas e separados por vírgula.
+   O ID é o que vem depois de "v=" no endereço do YouTube.
+   Ex.: https://www.youtube.com/watch?v=AbC123xyz  ->  'AbC123xyz'
+   Deixando a lista vazia, a área dos vídeos simplesmente não aparece.
+   ===================================================================== */
+var VIDEOS = ['G5pGOLuWY1w'];
+
+(function () {
+  var caixa = document.getElementById('vids'), rot = document.getElementById('vidlb');
+  if (!caixa) return;
+  if (!VIDEOS.length && rot) rot.style.display = 'none';
+  if (!VIDEOS.length) { caixa.style.display = 'none'; return; }
+  if (VIDEOS.length === 1) caixa.style.gridTemplateColumns = '1fr';
+  VIDEOS.slice(0, 4).forEach(function (id) {
+    var d = document.createElement('div');
+    d.className = 'vid';
+    d.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id +
+      '" title="Trabalho do abba estúdio" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+    caixa.appendChild(d);
+  });
+})();
+
 // contagem regressiva + numeros que sobem
 (function () {
   var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var alvo = new Date(2026, 11, 12), hoje = new Date();
+  var alvo = new Date(2026, 9, 13), hoje = new Date();
   hoje.setHours(0, 0, 0, 0);
   var dias = Math.max(0, Math.round((alvo - hoje) / 86400000));
   var elDias = document.getElementById('dias');
