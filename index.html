@@ -103,6 +103,17 @@ b, strong { color:#fff; font-weight:700; }
 .numc .l { font-size:12.5px; font-weight:700; margin-top:8px; }
 .numc .d { font-size:11.5px; color:var(--muted); margin-top:5px; line-height:1.5; }
 
+/* ===== aviso ===== */
+.warn { border:1px solid rgba(255,196,46,.45); border-left:4px solid var(--gold); border-radius:14px;
+  background:rgba(255,196,46,.06); padding:28px 26px; margin-top:34px; }
+.warn h3 { font-family:'Bebas Neue',sans-serif; font-size:clamp(24px,3.6vw,30px); line-height:1.04; margin-top:8px; }
+.wgrid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:22px; }
+.wcase { border:1px solid var(--hair); border-radius:12px; padding:22px 20px; background:rgba(8,9,10,.45); }
+.wcase .tp { font-size:9.5px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); font-weight:700; }
+.wcase h4 { font-size:15px; font-weight:700; margin:9px 0 8px; }
+.wcase p { font-size:13px; line-height:1.7; color:#B9C0C8; }
+.warn .fine { font-size:12.5px; line-height:1.7; color:#C4CAD1; margin-top:20px; }
+
 /* ===== vídeos ===== */
 .vidlb { font-size:9.5px; letter-spacing:.24em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-top:30px; }
 .vids { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:30px; }
@@ -190,6 +201,7 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
   .g3, .g2, .ben { grid-template-columns:1fr; }
   .nums { grid-template-columns:repeat(2,1fr); }
   .vids { grid-template-columns:1fr; }
+  .wgrid { grid-template-columns:1fr; }
   .ben { gap:0; }
   .hero-top img { width:112px; }
   .slot { flex-direction:column; gap:6px; }
@@ -220,10 +232,11 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
   <div class="hero-in">
     <div class="eyebrow">Lagoinha Itaquacetuba &nbsp;·&nbsp; Sábado, 5 de dezembro de 2026</div>
     <h1>ABALA<br>ITAQUÁ</h1>
-    <p>Você sobe com a <b>sua própria banda</b>, ministra uma música e sai da conferência com
-    <b>vídeo em 4K</b>, <b>áudio mixado e masterizado</b> e <b>fotos profissionais</b> — pronto para publicar.</p>
+    <p>Você ministra uma música — <b>autoral com a sua banda</b> ou <b>cover com os músicos do dia</b> —
+    e sai da conferência com <b>vídeo em 4K</b>, <b>áudio mixado e masterizado</b> e
+    <b>fotos profissionais</b>, pronto para publicar.</p>
     <div class="stats">
-      <div class="stat"><div class="k">Sua janela</div><div class="v">1 música, com a sua banda</div></div>
+      <div class="stat"><div class="k">Sua janela</div><div class="v">1 música ou medley</div></div>
       <div class="stat"><div class="k">Entrega</div><div class="v">Até 30 dias</div></div>
       <div class="stat"><div class="k">Onde</div><div class="v">Lagoinha Itaquacetuba</div></div>
     </div>
@@ -324,7 +337,7 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
     </div>
     <div class="steps">
       <div class="step rv"><div class="n">ETAPA 01</div><h3>Você chama no WhatsApp</h3>
-        <p>A gente conversa, passa os valores e as formas de pagamento e confirma se ainda há vaga aberta.</p></div>
+        <p>A gente conversa, passa os valores e as formas de pagamento e confirma se ainda há vaga aberta. Já nessa conversa você informa a música e se vai levar banda própria.</p></div>
       <div class="step rv"><div class="n">ETAPA 02</div><h3>Termo e pagamento</h3>
         <p>Você recebe o termo de contratação, preenche seus dados e assina. O pagamento é integral no ato da assinatura — é ele que reserva a vaga no seu nome.</p></div>
       <div class="step rv"><div class="n">ETAPA 03</div><h3>Preparação técnica</h3>
@@ -333,6 +346,29 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
         <p>Você sobe ao palco e ministra sua música. A equipe do abba estúdio capta tudo em áudio, vídeo e foto.</p></div>
       <div class="step rv"><div class="n">ETAPA 05</div><h3>Pós-produção e entrega</h3>
         <p>Mix, master, edição, tratamento de cor e seleção das fotos. Em até 30 dias o link chega para você baixar.</p></div>
+    </div>
+
+    <div class="warn rv">
+      <div class="eyebrow">Leia antes de fechar sua vaga</div>
+      <h3>MÚSICA AUTORAL OU COVER:<br>AS REGRAS SÃO DIFERENTES</h3>
+      <div class="wgrid">
+        <div class="wcase">
+          <div class="tp">Música autoral</div>
+          <h4>Você leva os seus músicos</h4>
+          <p>Se a sua apresentação for de <b>música autoral</b>, é <b>obrigatório</b> levar a sua própria
+          banda. Nenhum músico consegue tocar de ouvido uma composição que não conhece, e não há tempo de
+          ensaio no dia para aprender uma canção inédita.</p>
+        </div>
+        <div class="wcase">
+          <div class="tp">Cover</div>
+          <h4>Sem banda? A gente resolve</h4>
+          <p>Se for <b>cover</b> e você não tiver banda, é só <b>informar o louvor no momento da inscrição</b>.
+          Nós repassamos a música aos músicos disponíveis no dia, que acompanham a sua ministração.</p>
+        </div>
+      </div>
+      <p class="fine">Em qualquer um dos casos, informe também <b>quantas pessoas sobem ao palco com você</b>,
+      para organizarmos a passagem de som e o posicionamento das câmeras. Louvor informado em cima da hora
+      pode não ser aceito — quanto antes você avisar, melhor o resultado.</p>
     </div>
   </div>
 </section>
@@ -400,8 +436,8 @@ footer span { font-size:9.5px; letter-spacing:.18em; text-transform:uppercase; c
     <div class="faq">
       <div class="q"><button type="button">Quantas músicas eu canto?</button>
         <div class="a"><p>Uma música, que pode ser um medley. A janela é de até 10 minutos no palco.</p></div></div>
-      <div class="q"><button type="button">Canto com playback ou com banda?</button>
-        <div class="a"><p>Com a sua própria banda. Você traz seus músicos, e todos entram na captação de áudio e vídeo. Na hora de fechar a vaga, informe quantas pessoas sobem ao palco com você, para a gente organizar a passagem de som e o posicionamento das câmeras.</p></div></div>
+      <div class="q"><button type="button">Preciso levar banda?</button>
+        <div class="a"><p>Depende do que você vai cantar. Se for <b>música autoral</b>, sim: é obrigatório levar seus próprios músicos, porque ninguém toca de ouvido uma composição inédita. Se for <b>cover</b> e você não tiver banda, informe o louvor no momento da inscrição — nós repassamos aos músicos disponíveis no dia. Em qualquer caso, avise quantas pessoas sobem ao palco com você.</p></div></div>
       <div class="q"><button type="button">Eu recebo os arquivos brutos?</button>
         <div class="a"><p>Não. Você recebe o material já finalizado: o vídeo em 4K com o áudio mixado e masterizado integrado, e as fotos selecionadas e tratadas. Gravações originais de câmera, faixas multipista e projetos de edição ficam com o estúdio.</p></div></div>
       <div class="q"><button type="button">Posso postar onde eu quiser?</button>
